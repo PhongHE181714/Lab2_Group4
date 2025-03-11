@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(31, 54, 70);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+footer {
+    background-color: #333;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+
+
+#about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-left img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-right {
+    flex: 1;
+}
+
+.about-right p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image {
+    max-width: 30%;
+    height: auto;
+    margin: 10px;
+    border: 5px solid #d3d34f;
+    border-radius: 75px;
+}
+
+#reviews {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+#reviews h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: -430px;
+    color: #333;
+
+}
+
+.fb-comments {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fb-comments li {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px; /* Bo tròn khung bình luận */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng */
+    max-width: 100%; /* Căn chỉnh nội dung bình luận */
+}
+
+.comment-avatar {
+    margin-right: 15px;
+}
+
+.comment-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Bo tròn ảnh đại diện */
+}
+
+.comment-content {
+    flex-grow: 1;
+}
+
+.comment-content strong {
+    color: #365899;
+    font-size: 14px;
+}
+.comment-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #1c1e21;
+    line-height: 1.4;
+}
+
+.comment-time {
+    font-size: 12px;
+    color: #90949c;
+    margin-top: 5px;
+}
+
+.fb-comments li:hover {
+    background-color: #f6f6f6;
+}
+.rating {
+    color: #ffd700; /* Màu vàng cho các sao */
+    font-size: 18px; /* Kích thước sao */
+    margin: 5px 0;
+}
+
+.rating span {
+    margin-right: 5px; /* Khoảng cách giữa các sao */
+}
+
+
+/* "Trang Chủ" button */
+.page-heading {
+    height: 200px;
+}
+.page-direction-button {
+    margin-right: 20px;
+}
+
+.page-heading .page-direction-button {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.page-direction-button a {
+    background-color: #ffe165;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.page-direction-button a:hover {
+    background-color: #ccc;
+    color: black;
+}
+/* Content Wrapper */
+.content-container {
+    margin-top: 80px; /* Add margin to avoid overlap with header */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}

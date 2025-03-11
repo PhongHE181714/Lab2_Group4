@@ -1,0 +1,294 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+
+/* "Trang Chủ" button */
+.page-heading {
+    height: 200px;
+}
+.page-direction-button {
+    margin-right: 20px;
+}
+
+.page-heading .page-direction-button {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.page-direction-button a {
+    background-color: #ffe165;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.page-direction-button a:hover {
+    background-color: #ccc;
+    color: black;
+}
+/* Content Wrapper */
+.content-container {
+    margin-top: 80px; /* Add margin to avoid overlap with header */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Flight form */
+.flight-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    flex-basis: 48%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Trip type */
+.trip-type {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+}
+
+.trip-type input {
+    margin-right: 10px;
+}
+
+/* Buttons */
+.btn {
+   background: #FFE165;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full width for buttons */
+}
+
+.btn:hover {
+    background-color: #ff7700;
+}
+
+/* Flight list */
+.flight-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.flight-list th,
+.flight-list td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.flight-list th {
+   background: #FFE165;
+    color: black;
+}
+
+.flight-list td {
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    background-color: #333; /* Thay đổi màu nền thành tối hơn */
+    color: #f5f5f5; /* Chỉnh màu chữ để dễ đọc hơn */
+    text-align: center;
+    padding: 15px 0; /* Giảm padding để footer nhỏ hơn */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Giữ footer ở cuối trang nhưng không cố định */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%; /* Đảm bảo footer chiếm toàn bộ chiều rộng */
+}
+
+.footer-content {
+    max-width: 1000px; /* Giảm chiều rộng tối đa của nội dung */
+    margin: 0 auto;
+    padding: 0 15px; /* Thêm padding để căn chỉnh */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0; /* Thêm khoảng cách trên dưới */
+    display: flex;
+    justify-content: center; /* Căn giữa các liên kết */
+    flex-wrap: wrap; /* Cho phép các liên kết xuống dòng nếu quá dài */
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px; /* Giảm khoảng cách giữa các liên kết */
+}
+
+.footer-links a {
+    color: #f5f5f5; /* Giữ màu chữ trắng */
+    text-decoration: none;
+    font-size: 14px; /* Giảm kích thước chữ cho gọn */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #ffce54; /* Thêm hiệu ứng hover với màu vàng nhạt */
+}
+
+.footer small {
+    display: block;
+    margin-top: 10px; /* Thêm khoảng cách giữa liên kết và text nhỏ */
+    font-size: 12px; /* Kích thước chữ nhỏ hơn */
+    color: #ccc; /* Màu xám nhạt cho chữ nhỏ */
+}
+
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    display: none;
+    align-items: center;
+}
+
+.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalSlideDown ease 0.4s;
+}
+
+.modal-header {
+    background-color: rgb(56, 102, 201);
+    height: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.ti-world {
+    margin-right: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 8px;
+    opacity: 0.8;
+}
+
+.modal-close:hover {
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 16px;
+    margin: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    border-top: 1px solid #ccc;
+}
+
+.modal-footer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.modal-footer button:hover {
+    background-color: rgb(224, 34, 34);
+    color: #f5f5f5;
+}
+
+/* Keyframes for modal animation */
+@keyframes modalSlideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
